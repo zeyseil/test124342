@@ -84,7 +84,7 @@ end
 ```
 
 ---
-DISCLAIMER: NOT BELOW IS THE REAL CREATOR
+DISCLAIMER: BELOW IS THE REAL CREATOR
 ## 📜 Usage Policy & Copyright
 
 **Copyright © 2025 Duxii. All Rights Reserved.**     
