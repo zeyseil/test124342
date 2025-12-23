@@ -289,3 +289,4 @@ _G.AutoSnowballs = true
                 TDS:Ability(17, "Hologram Tower", {towerToClone = 19, towerPosition = Vector3.new(7.3, 3.46, 9.55)}, true)
                 TDS:Ability(18, "Hologram Tower", {towerToClone = 19, towerPosition = Vector3.new(12.96, 3.46, 9.92)}, true)
 TDS:RestartGame()
+TDS:StartBackToLobbyLoop()
