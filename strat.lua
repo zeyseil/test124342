@@ -13,8 +13,6 @@ _G.AutoSnowballs = true
                 TDS:SelectMap("Simplicity") -- Only use this if you have VIP
                 TDS:VoteMap("Simplicity", Vector3.new(12.59, 10.64, 52.01)) -- Keep the Vectors as is, don't change them
 
-                TDS:VoteModifiers({Committed = true, Glass = true, ExplodingEnemies = true})
-
                 TDS:StartGame()
 
                 task.wait(7)
