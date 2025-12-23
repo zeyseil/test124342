@@ -1,12 +1,12 @@
+local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/zeyseil/test124342/refs/heads/main/main.lua"))()
+
 
 _G.AutoStrat = true
-_G.Webhook = "PUTWEBHOOKHERE" -- IF YOU SET YOUR WEBHOOK MAKE SURE _G.SendWebhook is set to true aswell under this
-_G.SendWebhook = false
+_G.Webhook = "https://discord.com/api/webhooks/1449636005068931092/398JKNCl_cTcLY9w4WJnnptnZ1qo7sFryzK4yLEZS5A9FlnugfDhtodHt46_YKxKoN_G" -- IF YOU SET YOUR WEBHOOK MAKE SURE _G.SendWebhook is set to true aswell under this
+_G.SendWebhook = true
 _G.BackToLobby =  true
 _G.AutoSkip = false
 _G.AutoSnowballs = true
-
-            local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/zeyseil/test124342/refs/heads/main/main.lua"))()
 
             -- Example Strat
             while _G.AutoStrat do
