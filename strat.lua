@@ -1,12 +1,3 @@
-local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/DuxiiT/tds-autostrat/refs/heads/main/main.lua"))()
-local success, TDS = pcall(function()
-    return loadstring(game:HttpGet(script_url))()
-end)
-
-if not success or not TDS then
-    warn("Failed to load tds-autostrat-lib")
-    return
-end
 
             _G.AutoStrat = true
             _G.Webhook = "PUTWEBHOOKHERE" -- IF YOU SET YOUR WEBHOOK MAKE SURE _G.SendWebhook is set to true aswell under this
@@ -14,6 +5,8 @@ end
             _G.BackToLobby =  true
             _G.AutoSkip = false
             _G.AutoSnowballs = true
+
+local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/DuxiiT/tds-autostrat/refs/heads/main/main.lua"))()
 
             -- Example Strat
             while _G.AutoStrat do
