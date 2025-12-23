@@ -6,7 +6,7 @@
             _G.AutoSkip = false
             _G.AutoSnowballs = true
 
-local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/DuxiiT/tds-autostrat/refs/heads/main/main.lua"))()
+local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/zeyseil/test124342/refs/heads/main/main.lua"))()
 
             -- Example Strat
             while _G.AutoStrat do
