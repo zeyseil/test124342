@@ -1,6 +1,5 @@
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/zeyseil/test124342/refs/heads/main/main.lua"))()
 
-
 _G.AutoStrat = true
 _G.Webhook = "https://discord.com/api/webhooks/1449636005068931092/398JKNCl_cTcLY9w4WJnnptnZ1qo7sFryzK4yLEZS5A9FlnugfDhtodHt46_YKxKoN_G" -- IF YOU SET YOUR WEBHOOK MAKE SURE _G.SendWebhook is set to true aswell under this
 _G.SendWebhook = true
@@ -9,7 +8,6 @@ _G.AutoSkip = false
 _G.AutoSnowballs = true
 
             -- Example Strat
-            while _G.AutoStrat do
                 TDS:SelectMap("Simplicity") -- Only use this if you have VIP
                 TDS:VoteMap("Simplicity", Vector3.new(12.59, 10.64, 52.01)) -- Keep the Vectors as is, don't change them
 
@@ -283,7 +281,3 @@ _G.AutoSnowballs = true
 
                 TDS:Ability(17, "Hologram Tower", {towerToClone = 19, towerPosition = Vector3.new(7.3, 3.46, 9.55)}, true)
                 TDS:Ability(18, "Hologram Tower", {towerToClone = 19, towerPosition = Vector3.new(12.96, 3.46, 9.92)}, true)
-            end
-            repeat task.wait(1) until IsLobby()
-        end
-    end
