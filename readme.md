@@ -84,10 +84,10 @@ end
 ```
 
 ---
-DISCLAIMER: BELOW IS THE REAL CREATOR
+**DISCLAIMER: BELOW IS THE REAL CREATOR**
 ## 📜 Usage Policy & Copyright
 
-**Copyright © 2025 Duxii. All Rights Reserved.**     
+**Copyright © 2025 Duxii. All Rights Reserved.**     [original post](https://github.com/DuxiiT/tds-autostrat/)
 
 * **Modification:** Permitted for personal use or free strategies.
 * **Non-Commercial:** Strictly prohibited from selling this script or using it for paid services.
