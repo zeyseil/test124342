@@ -7,6 +7,13 @@ _G.BackToLobby =  true
 _G.AutoSkip = false
 _G.AutoSnowballs = true
 
+--requirements :
+--Tower 1 : Scout
+--Tower 2 : Hacker
+--Tower 3 : Mortar
+--Tower 4 : Mercenary Base
+--Tower 5 : Accelerator
+
             -- Example Strat
                 TDS:SelectMap("Simplicity") -- Only use this if you have VIP
                 TDS:VoteMap("Simplicity", Vector3.new(12.59, 10.64, 52.01)) -- Keep the Vectors as is, don't change them
