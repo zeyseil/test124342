@@ -8,17 +8,6 @@ if not success or not TDS then
     return
 end
 
-_G.AutoStrat = true
-    local Difficulty = "Frost" -- Replace this with the Difficulty you want to use (Examples: Easy, Intermediate, Molten, Fallen, Frost)
-    local function IsLobby() return game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("LobbyGui") end
-    local function IsInGame() return game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("GameGui") end
-
-    while _G.AutoStrat do
-        task.wait(1)
-        if IsLobby() then
-            game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction"):InvokeServer("Multiplayer","v2:start",{difficulty=Difficulty,mode="survival",count=1})
-        elseif IsInGame() then
-            task.wait(10)
             _G.AutoStrat = true
             _G.Webhook = "PUTWEBHOOKHERE" -- IF YOU SET YOUR WEBHOOK MAKE SURE _G.SendWebhook is set to true aswell under this
             _G.SendWebhook = false
