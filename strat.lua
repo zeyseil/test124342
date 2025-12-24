@@ -13,7 +13,7 @@ _G.AutoSnowballs = true
 -- Tower 4 : Mercenary Base
 -- Tower 5 : Accelerator
 
-local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/zeyseil/test124342/refs/heads/main/main.lua"))()
+            local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/DuxiiT/tds-autostrat/refs/heads/main/main.lua"))()
 
             -- Example Strat
                 TDS:SelectMap("Simplicity") -- Only use this if you have VIP
