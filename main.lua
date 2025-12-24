@@ -35,9 +35,6 @@ local ItemNames = {
     ["132155797622156"] = "Christmas Tree(s)",
     ["124065875200929"] = "Fruit Cake(s)",
     ["17429541513"] = "Barricade(s)",
-    ["17430415569"] = "Nuke(s)",
-    ["95120437798143"] = "Molten Monster(s)",
-    ["139414922355803"] = "Present Cluster Bomb(s)"
 }
 
 -- // currency tracking
@@ -463,26 +460,52 @@ local function do_activate_ability(t_obj, ab_name, ab_data, is_looping)
 
     ab_data = type(ab_data) == "table" and ab_data or nil
 
-    if ab_data then
-        if ab_data.towerPosition and type(ab_data.towerPosition) == "table" and #ab_data.towerPosition > 0 then
-            ab_data.towerPosition = ab_data.towerPosition[math.random(1, #ab_data.towerPosition)]
-        end
-        if type(ab_data.towerToClone) == "number" then
-            ab_data.towerToClone = TDS.placed_towers[ab_data.towerToClone]
-        end
-        if type(ab_data.towerTarget) == "number" then
-            ab_data.towerTarget = TDS.placed_towers[ab_data.towerTarget]
-        end
+    local positions
+    if ab_data and type(ab_data.towerPosition) == "table" then
+        positions = ab_data.towerPosition
     end
+
+    local clone_idx = ab_data and ab_data.towerToClone
+    local target_idx = ab_data and ab_data.towerTarget
 
     local function attempt()
         while true do
             local ok, res = pcall(function()
-                local send_table = { Troop = t_obj, Name = ab_name }
-                if ab_data then send_table.Data = ab_data end
-                return remote_func:InvokeServer("Troops", "Abilities", "Activate", send_table)
+                local data
+
+                if ab_data then
+                    data = table.clone(ab_data)
+
+                    -- 🎯 RANDOMIZE HERE (every attempt)
+                    if positions and #positions > 0 then
+                        data.towerPosition = positions[math.random(#positions)]
+                    end
+
+                    if type(clone_idx) == "number" then
+                        data.towerToClone = TDS.placed_towers[clone_idx]
+                    end
+
+                    if type(target_idx) == "number" then
+                        data.towerTarget = TDS.placed_towers[target_idx]
+                    end
+                end
+
+                return remote_func:InvokeServer(
+                    "Troops",
+                    "Abilities",
+                    "Activate",
+                    {
+                        Troop = t_obj,
+                        Name = ab_name,
+                        Data = data
+                    }
+                )
             end)
-            if ok and check_res_ok(res) then return true end
+
+            if ok and check_res_ok(res) then
+                return true
+            end
+
             task.wait(0.25)
         end
     end
@@ -637,6 +660,40 @@ function TDS:Ability(idx, name, data, loop)
     local t = self.placed_towers[idx]
     if not t then return false end
     return do_activate_ability(t, name, data, loop)
+end
+
+function TDS:AutoChain(...)
+    local tower_indices = {...}
+    if #tower_indices == 0 then return end
+
+    local running = true
+
+    task.spawn(function()
+        local i = 1
+        while running do
+            local idx = tower_indices[i]
+            local tower = self.placed_towers[idx]
+
+            if tower then
+                do_activate_ability(tower, "Call to Arms")
+            end
+
+            if local_player.TimescaleTickets.Value >= 1 then
+                task.wait(5.5)
+            else
+                task.wait(10.5) 
+            end
+
+            i += 1
+            if i > #tower_indices then
+                i = 1
+            end
+        end
+    end)
+
+    return function()
+        running = false
+    end
 end
 
 function TDS:SetOption(idx, name, val, wave)
