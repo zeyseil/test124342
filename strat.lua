@@ -17,8 +17,7 @@
             local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/DuxiiT/tds-autostrat/refs/heads/main/main.lua"))()
 
 -- Example strat
-
- TDS:SelectMap("Simplicity") -- Only use this if you have VIP
+                TDS:SelectMap("Simplicity") -- Only use this if you have VIP
                 TDS:VoteMap("Simplicity", Vector3.new(12.59, 10.64, 52.01)) -- Keep the Vectors as is, don't change them
 
                 TDS:StartGame()
@@ -293,3 +292,4 @@
                 TDS:Ability(18, "Hologram Tower", {towerToClone = 19, towerPosition = Vector3.new(12.96, 3.46, 9.92)}, true)
 TDS:RestartGame()
 TDS:StartBackToLobbyLoop()
+                
