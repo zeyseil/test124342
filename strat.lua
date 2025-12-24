@@ -289,15 +289,7 @@
                 TDS:SetOption(21, "Unit 2", "Riot Guard", 40)
                 TDS:SetOption(21, "Unit 3", "Riot Guard", 40)
 
-                TDS:Ability(17, "Hologram Tower", {towerToClone = 19, towerPosition = {
-                                    Vector3.new(7.3, 3.46, 9.55),
-                                    Vector3.new(15.6933384, 3.46938467, 18.3442345),
-                                    }
-                        }, true)
-                TDS:Ability(18, "Hologram Tower", {towerToClone = 19, towerPosition = {
-                                    Vector3.new(12.96, 3.46, 9.92),
-                                    Vector3.new(19.6996384, 3.46937752, 4.1759696),
-                                    }
-                        }, true)
+                TDS:Ability(17, "Hologram Tower", {towerToClone = 19, towerPosition = Vector3.new(7.3, 3.46, 9.55)}, true)
+                TDS:Ability(18, "Hologram Tower", {towerToClone = 19, towerPosition = Vector3.new(12.96, 3.46, 9.92)}, true)
 TDS:RestartGame()
 TDS:StartBackToLobbyLoop()
