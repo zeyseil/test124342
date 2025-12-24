@@ -1,22 +1,24 @@
+-- Strategy Requirements
+            
+            -- --------------------------
+            -- Tower 1: Golden Scout
+            -- Tower 2: Hacker
+            -- Tower 3: Mortar
+            -- Tower 4: Accelerator
+            -- Tower 5: Mercenary Base
 
-_G.AutoStrat = true
-_G.Webhook = "https://discord.com/api/webhooks/1449636005068931092/398JKNCl_cTcLY9w4WJnnptnZ1qo7sFryzK4yLEZS5A9FlnugfDhtodHt46_YKxKoN_G" -- IF YOU SET YOUR WEBHOOK MAKE SURE _G.SendWebhook is set to true aswell under this
-_G.SendWebhook = true
-_G.BackToLobby =  true
-_G.AutoSkip = false
-_G.AutoSnowballs = true
-
--- requirements :
--- Tower 1 : Scout
--- Tower 2 : Hacker
--- Tower 3 : Mortar
--- Tower 4 : Mercenary Base
--- Tower 5 : Accelerator
+            _G.AutoStrat = true
+            _G.Webhook = "https://discord.com/api/webhooks/1449636005068931092/398JKNCl_cTcLY9w4WJnnptnZ1qo7sFryzK4yLEZS5A9FlnugfDhtodHt46_YKxKoN_G" -- SET YOUR WEBHOOK URL HERE, IF YOU DO MAKE SURE _G.SendWebhook is set to true aswell
+            _G.SendWebhook = true
+            _G.BackToLobby =  true
+            _G.AutoSkip = false
+            _G.AutoSnowballs = false
 
             local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/DuxiiT/tds-autostrat/refs/heads/main/main.lua"))()
 
-            -- Example Strat
-                TDS:SelectMap("Simplicity") -- Only use this if you have VIP
+-- Example strat
+
+ TDS:SelectMap("Simplicity") -- Only use this if you have VIP
                 TDS:VoteMap("Simplicity", Vector3.new(12.59, 10.64, 52.01)) -- Keep the Vectors as is, don't change them
 
                 TDS:StartGame()
