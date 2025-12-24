@@ -158,54 +158,30 @@ TDS:SelectMap("Simplicity") -- Only use this if you have VIP
                 TDS:Upgrade(24)
                 TDS:Upgrade(24)
 
-                TDS:Place("Accelerator", -12.2662086, 2.35000062, -3.25761509) -- 25
+            TDS:Place("Warlock", -12.38, 1.00, -3.21) -- 25
                 TDS:Upgrade(25)
                 TDS:Upgrade(25)
+                TDS:Place("Warlock", -9.21, 1.00, -3.58) -- 26
+                TDS:Upgrade(26)
+                TDS:Upgrade(26)
+                TDS:Place("Warlock", -12.61, 1.00, -0.15) -- 27
+                TDS:Upgrade(27)
+                TDS:Upgrade(27)
+                TDS:Place("Warlock", -9.32, 1.00, -0.39) -- 28
+                TDS:Upgrade(28)
+                TDS:Upgrade(28)
                 TDS:Upgrade(25)
-                TDS:Place("Accelerator", -9.20669079, 2.35000062, -3.72644901) -- 26
-                TDS:Upgrade(26)
-                TDS:Upgrade(26)
-                TDS:Upgrade(26)
-                TDS:Place("Accelerator", -12.5857639, 2.3499999, -0.181622505) -- 27
-                TDS:Upgrade(27)
-                TDS:Upgrade(27)
-                TDS:Upgrade(27)
-                TDS:Place("Accelerator", -9.50760174, 2.34998322, -0.291201711) -- 28
-                TDS:Upgrade(28)
-                TDS:Upgrade(28)
-                TDS:Upgrade(28)
-                TDS:Place("Accelerator", -6.0414834, 2.34998822, -3.48896456) -- 29
-                TDS:Upgrade(29)
-                TDS:Upgrade(29)
-                TDS:Upgrade(29)
-                TDS:Place("Accelerator", -2.96400309, 2.3499918, -3.02500224) -- 30
-                TDS:Upgrade(30)
-                TDS:Upgrade(30)
-                TDS:Upgrade(30)
-                TDS:Place("Accelerator", -5.87025166, 2.34999704, -8.96354485) -- 31
-                TDS:Upgrade(31)
-                TDS:Upgrade(31)
-                TDS:Upgrade(31)
-                TDS:Place("Accelerator", -2.75959086, 2.35000157, -9.03289604) -- 32
-                TDS:Upgrade(32)
-                TDS:Upgrade(32)
-                TDS:Upgrade(32)
                 TDS:Upgrade(25)
                 TDS:Upgrade(25)
                 TDS:Upgrade(26)
                 TDS:Upgrade(26)
+                TDS:Upgrade(26)
+                TDS:Upgrade(27)
                 TDS:Upgrade(27)
                 TDS:Upgrade(27)
                 TDS:Upgrade(28)
                 TDS:Upgrade(28)
-                TDS:Upgrade(29)
-                TDS:Upgrade(29)
-                TDS:Upgrade(30)
-                TDS:Upgrade(30)
-                TDS:Upgrade(31)
-                TDS:Upgrade(31)
-                TDS:Upgrade(32)
-                TDS:Upgrade(32)
+                TDS:Upgrade(28)
                 TDS:Upgrade(8)
                 TDS:Upgrade(8)
                 TDS:Upgrade(8, 2)
