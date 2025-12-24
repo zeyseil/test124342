@@ -157,6 +157,7 @@ TDS:SelectMap("Simplicity") -- Only use this if you have VIP
                 TDS:Upgrade(23)
                 TDS:Upgrade(24)
                 TDS:Upgrade(24)
+
                 TDS:Place("Accelerator", -12.2662086, 2.35000062, -3.25761509) -- 25
                 TDS:Upgrade(25)
                 TDS:Upgrade(25)
