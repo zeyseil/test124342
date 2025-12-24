@@ -34,7 +34,10 @@ local ItemNames = {
     ["18443277106"] = "Mid Grade Consumable Crate(s)",
     ["132155797622156"] = "Christmas Tree(s)",
     ["124065875200929"] = "Fruit Cake(s)",
-    ["17429541513"] = "Barricade(s)",
+    ["17429541513"] = "Barricade(s)"
+    ["17430415569"] = "Nuke(s)",
+    ["95120437798143"] = "Molten Monster(s)",
+    ["139414922355803"] = "Present Cluster Bomb(s)",
 }
 
 -- // currency tracking
