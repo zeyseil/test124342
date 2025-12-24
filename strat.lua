@@ -6,7 +6,7 @@ _G.BackToLobby =  true
 _G.AutoSkip = false
 _G.AutoSnowballs = true
 
---requirements :
+-- requirements :
 -- Tower 1 : Scout
 -- Tower 2 : Hacker
 -- Tower 3 : Mortar
